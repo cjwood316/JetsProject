@@ -1,5 +1,5 @@
 # Jets Project
 ## Second-Week Project
-###Jcob Wood, Skill Distillery Student
+### Jacob Wood, Skill Distillery Student
 
 This is my second weeks project.
