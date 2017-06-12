@@ -6,6 +6,7 @@ public class Jet {
 	private int range;
 	private double price;
 
+
 	public Jet() {
 		super();
 	}
@@ -52,11 +53,13 @@ public class Jet {
 
 	@Override
 	public String toString() {
+		String mphToMach = String.format("%.02f", speed  * 0.00131f );
 		StringBuilder builder = new StringBuilder();
 		builder.append("Jet [aircraftModel=");
 		builder.append(aircraftModel);
 		builder.append(", speed=");
-		builder.append(speed);
+		builder.append(mphToMach);
+//		builder.append("%.02f", speed * 0.00131f);
 		builder.append(", range=");
 		builder.append(range);
 		builder.append(", price=");

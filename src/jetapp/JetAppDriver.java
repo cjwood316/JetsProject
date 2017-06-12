@@ -44,7 +44,7 @@ public class JetAppDriver {
 			break;
 
 		case 5:
-			System.out.println("Thank you for using JetApp 1.0/n Quitting!");
+			System.out.println("Thank you for using JetApp 1.0\nQuitting!");
 			return true;
 		default:
 			System.out.println("Invalid option please try again.");
@@ -83,8 +83,20 @@ public class JetAppDriver {
 	}
 
 	public void viewLongestRange() {
+		currentFleet();
+		Jet longestFlyingJet = new Jet();
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
 
+				if (jets[i].getRange() > longestFlyingJet.getRange()) {
+					longestFlyingJet = jets[i];
+				}
+			}
+		}
+		System.out.println("\nLongest range jet: " + longestFlyingJet.toString() + "\n\n");
+		menu.menuOptions();
 	}
+	
 
 	public void currentFleet() {
 
