@@ -55,7 +55,7 @@ public class Jet {
 	public String toString() {
 		String mphToMach = String.format("%.02f", speed  * 0.00131f );
 		StringBuilder builder = new StringBuilder();
-		builder.append("Jet [aircraftModel=");
+		builder.append("Jet: aircraftModel=");
 		builder.append(aircraftModel);
 		builder.append(", speed=");
 		builder.append(mphToMach);
@@ -64,7 +64,7 @@ public class Jet {
 		builder.append(range);
 		builder.append(", price=");
 		builder.append(price);
-		builder.append("]");
+		builder.append("");
 		return builder.toString();
 	}
 }
