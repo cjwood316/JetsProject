@@ -6,7 +6,7 @@ public class JetMenu {
 		
 		System.out.println("*************************************************");
 		System.out.println("*************************************************");
-		System.out.println("*******            Fleet Menu             *******");
+		System.out.println("*******        Fleet Menu v1.0            *******");
 		System.out.println("*************************************************");
 		System.out.println("***                                           ***");
 		System.out.println("***       1. List Jets Fleet                  ***");
