@@ -61,11 +61,24 @@ public class JetAppDriver {
 				System.out.println(jets[i].toString());
 
 			}
-		}
+		}	
 
 	}
 
 	public void viewFastestJet() {
+		currentFleet();
+		Jet fastestJet = new Jet();
+
+		for (int i = 0; i < jets.length; i++) {
+			if (jets[i] != null) {
+
+				if (jets[i].getSpeed() > fastestJet.getSpeed()) {
+					fastestJet = jets[i];
+				}
+			}
+		}
+		System.out.println("\nFastest jet: " + fastestJet.toString()+ "\n\n");
+		menu.menuOptions();
 
 	}
 
